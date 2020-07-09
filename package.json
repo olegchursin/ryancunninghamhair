@@ -1,0 +1,50 @@
+{
+  "name": "ryan-cunningham-hair",
+  "private": true,
+  "description": "Ryan Cunningham Hair - Official Website",
+  "version": "0.0.1",
+  "author": "Oleg Chursin <olegchursin@gmail.com>",
+  "dependencies": {
+    "gatsby": "^2.20.18",
+    "gatsby-background-image": "^1.1.0",
+    "gatsby-image": "^2.3.2",
+    "gatsby-plugin-manifest": "^2.3.3",
+    "gatsby-plugin-offline": "^3.1.2",
+    "gatsby-plugin-react-helmet": "3.2.2",
+    "gatsby-plugin-sharp": "^2.5.4",
+    "gatsby-plugin-styled-components": "^3.2.1",
+    "gatsby-source-filesystem": "^2.2.2",
+    "gatsby-transformer-sharp": "^2.4.4",
+    "prop-types": "^15.7.2",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-helmet": "^6.0.0",
+    "styled-components": "^5.1.0",
+    "styled-media-query": "^2.1.2"
+  },
+  "devDependencies": {
+    "@testing-library/react": "^10.0.2",
+    "babel-jest": "^25.3.0",
+    "babel-preset-gatsby": "^0.3.1",
+    "jest": "^25.3.0",
+    "prettier": "^2.0.4"
+  },
+  "keywords": [
+    "gatsby",
+    "gatsby-background-image",
+    "example"
+  ],
+  "license": "MIT",
+  "scripts": {
+    "build": "gatsby build",
+    "clean": "gatsby clean",
+    "develop": "gatsby develop",
+    "format": "prettier --write src/**/*.{js,jsx}",
+    "start": "npm run develop",
+    "serve": "gatsby serve -p9001"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/timhagn/gbitest"
+  }
+}
