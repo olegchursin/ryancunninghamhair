@@ -1,10 +1,9 @@
-import React from 'react';
-import styled from 'styled-components';
-
+import ArtDirectedFullBackground from '../components/ArtDirectedFullBackground';
 import Layout from '../components/Layout';
 import SEO from '../components/SEO';
 import { StyledContentCenterWrapper } from '../components/SharedStyledComponents';
-import ArtDirectedFullBackground from '../components/ArtDirectedFullBackground';
+import React from 'react';
+import styled from 'styled-components';
 
 const CTA = styled.a`
   display: flex;
@@ -28,7 +27,7 @@ const StyledCenterWrapper = styled(StyledContentCenterWrapper)`
   max-width: 960px;
 `;
 
-const ArtDirectedImages = () => (
+const ArtDirectedImages: React.FC = () => (
   <Layout>
     <SEO title="Ryan Cunningham Hair" />
     <ArtDirectedFullBackground>

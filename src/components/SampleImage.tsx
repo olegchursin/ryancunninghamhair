@@ -1,8 +1,8 @@
-import React from 'react';
 import { graphql, useStaticQuery } from 'gatsby';
 import Img from 'gatsby-image';
+import React from 'react';
 
-const AstronautImage = () => {
+const SampleImage: React.FC = () => {
   const { placeholderImage } = useStaticQuery(
     graphql`
       query {
@@ -21,4 +21,4 @@ const AstronautImage = () => {
   const image = placeholderImage.childImageSharp;
   return <Img fluid={image.fluid} style={{ borderRadius: `15px` }} />;
 };
-export default AstronautImage;
+export default SampleImage;

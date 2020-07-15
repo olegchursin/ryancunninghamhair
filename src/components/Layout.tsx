@@ -1,12 +1,10 @@
-import React from 'react';
-import { StaticQuery, graphql } from 'gatsby';
-
-import Header from './Header';
 import Footer from './Footer';
-
+import Header from './Header';
 import './styles.css';
+import { graphql, StaticQuery } from 'gatsby';
+import React from 'react';
 
-const Layout = ({ children }) => (
+const Layout: React.FC = ({ children }) => (
   <StaticQuery
     query={graphql`
       query SiteTitleQuery {
