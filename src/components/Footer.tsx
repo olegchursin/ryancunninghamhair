@@ -28,7 +28,7 @@ const ExternalLink = styled.a`
   }
 `;
 
-const Footer = () => (
+const Footer: React.FC = () => (
   <StytledFooter>
     <span>© {new Date().getFullYear()} Ryan Cunningham Hair</span>
     <Divider>|</Divider>

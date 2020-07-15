@@ -1,9 +1,8 @@
-import React from 'react';
-import { graphql, useStaticQuery } from 'gatsby';
-import styled from 'styled-components';
-
-import BackgroundImage from 'gatsby-background-image';
 import { StyledFullScreenWrapper } from './SharedStyledComponents';
+import { graphql, useStaticQuery } from 'gatsby';
+import BackgroundImage from 'gatsby-background-image';
+import React from 'react';
+import styled from 'styled-components';
 
 const ArtDirectedFullBackground = ({ className, children }) => {
   const { desktop, medium, small } = useStaticQuery(
@@ -39,12 +38,12 @@ const ArtDirectedFullBackground = ({ className, children }) => {
     small.childImageSharp.fluid,
     {
       ...medium.childImageSharp.fluid,
-      media: `(min-width: 691px)`,
+      media: `(min-width: 691px)`
     },
     {
       ...desktop.childImageSharp.fluid,
-      media: `(min-width: 1401px)`,
-    },
+      media: `(min-width: 1401px)`
+    }
   ];
 
   return (

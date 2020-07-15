@@ -1,11 +1,17 @@
-import React from 'react';
+import { StyledFullScreenWrapper } from './SharedStyledComponents';
 import { graphql, useStaticQuery } from 'gatsby';
+import BackgroundImage from 'gatsby-background-image';
+import React from 'react';
 import styled from 'styled-components';
 
-import BackgroundImage from 'gatsby-background-image';
-import { StyledFullScreenWrapper } from './SharedStyledComponents';
+interface IFullBackgroundProps {
+  readonly className: string;
+}
 
-const FullBackground = ({ className, children }) => {
+const FullBackground: React.FC<IFullBackgroundProps> = ({
+  className,
+  children
+}) => {
   const { desktop } = useStaticQuery(
     graphql`
       query {

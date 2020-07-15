@@ -1,7 +1,6 @@
+import RCHLogo from '../images/rch-logo-wh.svg';
 import { Link } from 'gatsby';
 import React from 'react';
-
-import RCHLogo from '../images/rch-logo-wh.svg';
 import styled from 'styled-components';
 
 const Logo = styled.img`
@@ -9,7 +8,11 @@ const Logo = styled.img`
   margin-block-start: 40px;
 `;
 
-const styles = {
+interface IStyles {
+  [key: string]: React.CSSProperties;
+}
+
+const styles: IStyles = {
   header: {
     display: 'flex',
     alignItems: 'center',
@@ -22,7 +25,11 @@ const styles = {
   }
 };
 
-const Header = ({ siteTitle }) => (
+interface IFooterProps {
+  readonly siteTitle: string;
+}
+
+const Header: React.FC<IFooterProps> = ({ siteTitle }) => (
   <header style={styles.header}>
     <Link to="/">
       <Logo src={RCHLogo} alt={siteTitle} />
